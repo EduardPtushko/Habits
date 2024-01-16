@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Category {
     let name: String
-    let color: Color
+    let color: CategoryColor
 }
+
+extension Category: Codable {}
