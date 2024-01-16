@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3107E222B567680004BBBA9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3107E212B567680004BBBA9 /* HomeView.swift */; };
+		D3107E242B56768D004BBBA9 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3107E232B56768D004BBBA9 /* HabitListView.swift */; };
+		D3107E262B56769B004BBBA9 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3107E252B56769B004BBBA9 /* UserListView.swift */; };
+		D3107E282B5676A9004BBBA9 /* LogHabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3107E272B5676A9004BBBA9 /* LogHabitListView.swift */; };
+		D3107E2A2B5676B5004BBBA9 /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3107E292B5676B5004BBBA9 /* HabitDetailView.swift */; };
+		D3107E2C2B5676BE004BBBA9 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3107E2B2B5676BE004BBBA9 /* UserDetailView.swift */; };
+		D3107E2E2B567748004BBBA9 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3107E2D2B567748004BBBA9 /* Habit.swift */; };
+		D3107E322B5677DC004BBBA9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3107E312B5677DC004BBBA9 /* Color.swift */; };
+		D3107E342B5677E5004BBBA9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3107E332B5677E5004BBBA9 /* Category.swift */; };
 		D3F76BCA2B543B510005980B /* HabitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F76BC92B543B510005980B /* HabitsApp.swift */; };
 		D3F76BCC2B543B510005980B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F76BCB2B543B510005980B /* RootView.swift */; };
 		D3F76BCE2B543B530005980B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F76BCD2B543B530005980B /* Assets.xcassets */; };
@@ -14,6 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3107E212B567680004BBBA9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D3107E232B56768D004BBBA9 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
+		D3107E252B56769B004BBBA9 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		D3107E272B5676A9004BBBA9 /* LogHabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHabitListView.swift; sourceTree = "<group>"; };
+		D3107E292B5676B5004BBBA9 /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
+		D3107E2B2B5676BE004BBBA9 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		D3107E2D2B567748004BBBA9 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		D3107E312B5677DC004BBBA9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		D3107E332B5677E5004BBBA9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D3F76BC62B543B510005980B /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F76BC92B543B510005980B /* HabitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsApp.swift; sourceTree = "<group>"; };
 		D3F76BCB2B543B510005980B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -55,6 +73,15 @@
 				D3F76BD72B543C8C0005980B /* Info.plist */,
 				D3F76BC92B543B510005980B /* HabitsApp.swift */,
 				D3F76BCB2B543B510005980B /* RootView.swift */,
+				D3107E212B567680004BBBA9 /* HomeView.swift */,
+				D3107E232B56768D004BBBA9 /* HabitListView.swift */,
+				D3107E252B56769B004BBBA9 /* UserListView.swift */,
+				D3107E272B5676A9004BBBA9 /* LogHabitListView.swift */,
+				D3107E292B5676B5004BBBA9 /* HabitDetailView.swift */,
+				D3107E2B2B5676BE004BBBA9 /* UserDetailView.swift */,
+				D3107E2D2B567748004BBBA9 /* Habit.swift */,
+				D3107E312B5677DC004BBBA9 /* Color.swift */,
+				D3107E332B5677E5004BBBA9 /* Category.swift */,
 				D3F76BCD2B543B530005980B /* Assets.xcassets */,
 				D3F76BCF2B543B530005980B /* Preview Content */,
 			);
@@ -163,8 +190,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3107E2A2B5676B5004BBBA9 /* HabitDetailView.swift in Sources */,
+				D3107E222B567680004BBBA9 /* HomeView.swift in Sources */,
+				D3107E262B56769B004BBBA9 /* UserListView.swift in Sources */,
+				D3107E322B5677DC004BBBA9 /* Color.swift in Sources */,
+				D3107E242B56768D004BBBA9 /* HabitListView.swift in Sources */,
+				D3107E2C2B5676BE004BBBA9 /* UserDetailView.swift in Sources */,
 				D3F76BCC2B543B510005980B /* RootView.swift in Sources */,
+				D3107E2E2B567748004BBBA9 /* Habit.swift in Sources */,
+				D3107E282B5676A9004BBBA9 /* LogHabitListView.swift in Sources */,
 				D3F76BCA2B543B510005980B /* HabitsApp.swift in Sources */,
+				D3107E342B5677E5004BBBA9 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
