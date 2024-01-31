@@ -20,6 +20,8 @@
 		D3107E402B567E99004BBBA9 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3107E3F2B567E99004BBBA9 /* APIService.swift */; };
 		D3317CBD2B6810B4009790D4 /* HabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3317CBC2B6810B4009790D4 /* HabitViewModel.swift */; };
 		D3317CBF2B681BBA009790D4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3317CBE2B681BBA009790D4 /* Settings.swift */; };
+		D387B5762B6AA9B900C1AF92 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387B5752B6AA9B900C1AF92 /* User.swift */; };
+		D387B5782B6AAACB00C1AF92 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387B5772B6AAACB00C1AF92 /* UserViewModel.swift */; };
 		D3F76BCA2B543B510005980B /* HabitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F76BC92B543B510005980B /* HabitsApp.swift */; };
 		D3F76BCC2B543B510005980B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F76BCB2B543B510005980B /* RootView.swift */; };
 		D3F76BCE2B543B530005980B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F76BCD2B543B530005980B /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 		D3107E3F2B567E99004BBBA9 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		D3317CBC2B6810B4009790D4 /* HabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewModel.swift; sourceTree = "<group>"; };
 		D3317CBE2B681BBA009790D4 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		D387B5752B6AA9B900C1AF92 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D387B5772B6AAACB00C1AF92 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		D3F76BC62B543B510005980B /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F76BC92B543B510005980B /* HabitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsApp.swift; sourceTree = "<group>"; };
 		D3F76BCB2B543B510005980B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -99,10 +103,12 @@
 				D3317CBB2B68108A009790D4 /* App */,
 				D3F76BCB2B543B510005980B /* RootView.swift */,
 				D3317CBE2B681BBA009790D4 /* Settings.swift */,
+				D387B5772B6AAACB00C1AF92 /* UserViewModel.swift */,
+				D3107E252B56769B004BBBA9 /* UserListView.swift */,
 				D3107E212B567680004BBBA9 /* HomeView.swift */,
 				D3107E232B56768D004BBBA9 /* HabitListView.swift */,
 				D3317CBC2B6810B4009790D4 /* HabitViewModel.swift */,
-				D3107E252B56769B004BBBA9 /* UserListView.swift */,
+				D387B5752B6AA9B900C1AF92 /* User.swift */,
 				D3107E272B5676A9004BBBA9 /* LogHabitListView.swift */,
 				D3107E292B5676B5004BBBA9 /* HabitDetailView.swift */,
 				D3107E2B2B5676BE004BBBA9 /* UserDetailView.swift */,
@@ -222,6 +228,7 @@
 				D3107E222B567680004BBBA9 /* HomeView.swift in Sources */,
 				D3107E262B56769B004BBBA9 /* UserListView.swift in Sources */,
 				D3107E322B5677DC004BBBA9 /* Color.swift in Sources */,
+				D387B5762B6AA9B900C1AF92 /* User.swift in Sources */,
 				D3107E242B56768D004BBBA9 /* HabitListView.swift in Sources */,
 				D3107E2C2B5676BE004BBBA9 /* UserDetailView.swift in Sources */,
 				D3F76BCC2B543B510005980B /* RootView.swift in Sources */,
@@ -231,6 +238,7 @@
 				D3317CBD2B6810B4009790D4 /* HabitViewModel.swift in Sources */,
 				D3107E402B567E99004BBBA9 /* APIService.swift in Sources */,
 				D3F76BCA2B543B510005980B /* HabitsApp.swift in Sources */,
+				D387B5782B6AAACB00C1AF92 /* UserViewModel.swift in Sources */,
 				D3107E3E2B567E8F004BBBA9 /* APIRequest.swift in Sources */,
 				D3107E342B5677E5004BBBA9 /* Category.swift in Sources */,
 			);

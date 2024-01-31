@@ -25,6 +25,7 @@ struct HabitListView: View {
                             .contextMenu {
                                 Button {
                                     Settings.shared.toggleFavorites(habit: habit)
+                                    viewModel.update()
                                 } label: {
                                     Text(viewModel.favoriteHabits.contains(habit) ? "Unfavorite" : "Favorite")
                                 }
@@ -34,11 +35,13 @@ struct HabitListView: View {
                         Group {
                             switch sectionID {
                             case .favorites:
-                                Text("Favorites")
+                                HStack {
+                                    Text("Favorites")
+                                    Spacer()
+                                }
                             case .category(let category):
                                 HStack {
                                     Text(category.name)
-
                                     Spacer()
                                 }
                             }

@@ -33,7 +33,7 @@ final class HabitViewModel {
         }
     }
 
-    private func update() {
+    func update() {
         let itemsBySection = habitsByName.values.reduce(into: [Section: [Habit]]()) { partial, habit in
             let item = habit
             let section: Section

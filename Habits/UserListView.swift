@@ -8,13 +8,52 @@
 import SwiftUI
 
 struct UserListView: View {
+    var viewModel = UserViewModel()
+    var columns: [GridItem] = [.init(spacing: 20), .init(spacing: 20)]
+
     var body: some View {
         NavigationStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            GeometryReader { proxy in
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(viewModel.users, id: \.user) { item in
+                            Text(item.user.name)
+                                .padding(EdgeInsets(top: 11, leading: 8, bottom: 11, trailing: 8))
+                                .frame(height: (proxy.size.width - 60) / 2)
+                                .frame(maxWidth: .infinity)
+                                .border(.red)
+                                .contentShape(Rectangle())
+                                .contextMenu {
+                                    Button {
+                                        Settings.shared.toggleFollowed(user: item.user)
+                                        viewModel.setUsers()
+                                    } label: {
+                                        Text(item.isFollowed ? "Unfollow" : "Follow")
+                                    }
+                                }
+                        }
+                    }
+                }
+                .padding(.horizontal, 20)
+            }
+            .navigationTitle("Users")
+        }
+        .task {
+            await viewModel.update()
         }
     }
 }
 
 #Preview {
-    UserListView()
+    TabView {
+        UserListView()
+            .tabItem {
+                Label("People", systemImage: "person.2.fill")
+            }
+    }
+    //    .onAppear {
+    //        let tabBarAppearance = UITabBarAppearance()
+    //        tabBarAppearance.backgroundColor = .red
+    //        UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+    //    }
 }
