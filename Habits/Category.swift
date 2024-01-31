@@ -14,3 +14,13 @@ struct Category {
 }
 
 extension Category: Codable {}
+
+extension Category: Hashable {
+    static func ==(lhs: Category, rhs: Category) -> Bool {
+        lhs.name == rhs.name
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
+    }
+}
