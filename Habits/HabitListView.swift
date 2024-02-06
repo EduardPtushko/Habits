@@ -57,7 +57,7 @@ struct HabitListView: View {
             .listStyle(.plain)
             .navigationTitle("Habits")
             .navigationDestination(for: Habit.self) { habit in
-                Text(habit.name)
+                HabitDetailView(habit: habit)
             }
         }
         .task {

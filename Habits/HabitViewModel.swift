@@ -50,6 +50,7 @@ final class HabitViewModel {
     enum Section: Hashable, Comparable {
         case favorites
         case category(_ category: Category)
+
         static func <(lhs: Section, rhs: Section) -> Bool {
             switch (lhs, rhs) {
             case (.category(let left), .category(let right)):

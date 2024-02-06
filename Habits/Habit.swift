@@ -20,7 +20,7 @@ extension Habit: Hashable {
         hasher.combine(name)
     }
 
-    static func ==(lhs: Habit, rhs: Habit) -> Bool {
+    static func ==(_ lhs: Habit, _ rhs: Habit) -> Bool {
         lhs.name == rhs.name
     }
 }
@@ -30,3 +30,20 @@ extension Habit: Comparable {
         lhs.name < rhs.name
     }
 }
+
+#if DEBUG
+extension Habit {
+    static var sampleHabit = Habit(
+        name: "Brisk walk",
+        category: Category(
+            name: "Exercise",
+            color: CategoryColor(
+                hue: 0.25,
+                saturation: 1,
+                brightness: 0.9
+            )
+        ),
+        info: "Get your heart rate up with this simple aerobic exercise."
+    )
+}
+#endif
