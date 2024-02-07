@@ -25,6 +25,9 @@
 		D37F2FBF2B70E78F00D77438 /* HabitDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37F2FBE2B70E78F00D77438 /* HabitDetailViewModel.swift */; };
 		D387B5762B6AA9B900C1AF92 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387B5752B6AA9B900C1AF92 /* User.swift */; };
 		D387B5782B6AAACB00C1AF92 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D387B5772B6AAACB00C1AF92 /* UserViewModel.swift */; };
+		D3BDD64A2B736E25000E4083 /* UserStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BDD6492B736E25000E4083 /* UserStatistics.swift */; };
+		D3BDD64C2B736E60000E4083 /* HabitCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BDD64B2B736E60000E4083 /* HabitCount.swift */; };
+		D3BDD64E2B736F16000E4083 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BDD64D2B736F16000E4083 /* UserDetailViewModel.swift */; };
 		D3F76BCA2B543B510005980B /* HabitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F76BC92B543B510005980B /* HabitsApp.swift */; };
 		D3F76BCC2B543B510005980B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F76BCB2B543B510005980B /* RootView.swift */; };
 		D3F76BCE2B543B530005980B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F76BCD2B543B530005980B /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		D37F2FBE2B70E78F00D77438 /* HabitDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewModel.swift; sourceTree = "<group>"; };
 		D387B5752B6AA9B900C1AF92 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D387B5772B6AAACB00C1AF92 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		D3BDD6492B736E25000E4083 /* UserStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatistics.swift; sourceTree = "<group>"; };
+		D3BDD64B2B736E60000E4083 /* HabitCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCount.swift; sourceTree = "<group>"; };
+		D3BDD64D2B736F16000E4083 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		D3F76BC62B543B510005980B /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F76BC92B543B510005980B /* HabitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsApp.swift; sourceTree = "<group>"; };
 		D3F76BCB2B543B510005980B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -127,6 +133,9 @@
 				D3107E332B5677E5004BBBA9 /* Category.swift */,
 				D3F76BCD2B543B530005980B /* Assets.xcassets */,
 				D3F76BCF2B543B530005980B /* Preview Content */,
+				D3BDD6492B736E25000E4083 /* UserStatistics.swift */,
+				D3BDD64B2B736E60000E4083 /* HabitCount.swift */,
+				D3BDD64D2B736F16000E4083 /* UserDetailViewModel.swift */,
 			);
 			path = Habits;
 			sourceTree = "<group>";
@@ -235,6 +244,7 @@
 			files = (
 				D37F2FBD2B70E72200D77438 /* UserCount.swift in Sources */,
 				D3107E2A2B5676B5004BBBA9 /* HabitDetailView.swift in Sources */,
+				D3BDD64E2B736F16000E4083 /* UserDetailViewModel.swift in Sources */,
 				D3107E222B567680004BBBA9 /* HomeView.swift in Sources */,
 				D3107E262B56769B004BBBA9 /* UserListView.swift in Sources */,
 				D3107E322B5677DC004BBBA9 /* Color.swift in Sources */,
@@ -246,6 +256,8 @@
 				D3107E2E2B567748004BBBA9 /* Habit.swift in Sources */,
 				D3107E282B5676A9004BBBA9 /* LogHabitListView.swift in Sources */,
 				D3317CBF2B681BBA009790D4 /* Settings.swift in Sources */,
+				D3BDD64A2B736E25000E4083 /* UserStatistics.swift in Sources */,
+				D3BDD64C2B736E60000E4083 /* HabitCount.swift in Sources */,
 				D37F2FBB2B70E6E800D77438 /* HabitStatistics.swift in Sources */,
 				D3317CBD2B6810B4009790D4 /* HabitViewModel.swift in Sources */,
 				D3107E402B567E99004BBBA9 /* APIService.swift in Sources */,

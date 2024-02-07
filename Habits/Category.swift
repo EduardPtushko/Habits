@@ -16,7 +16,7 @@ struct Category {
 extension Category: Codable {}
 
 extension Category: Hashable {
-    static func ==(lhs: Category, rhs: Category) -> Bool {
+    static func ==(_ lhs: Category, _ rhs: Category) -> Bool {
         lhs.name == rhs.name
     }
 
