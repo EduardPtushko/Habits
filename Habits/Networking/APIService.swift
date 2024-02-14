@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct HabitRequest: APIRequest {
     typealias Response = [String: Habit]
@@ -59,4 +60,16 @@ struct HabitLeadStatisticsRequest: APIRequest {
     var userID: String
 
     var path: String { "/userLeadingStats/\(userID)" }
+}
+
+struct ImageRequest: APIRequest {
+    typealias Response = UIImage
+
+    var imageID: String
+
+    var path: String { "/images/" + imageID }
+
+    var imageURL: URL? {
+        request.url
+    }
 }

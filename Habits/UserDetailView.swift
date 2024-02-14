@@ -17,11 +17,17 @@ struct UserDetailView: View {
             VStack {
                 VStack(alignment: .leading, spacing: 20) {
                     HStack(spacing: 20.0) {
-                        Image(systemName: "person.fill")
-                            .resizable()
-                            .aspectRatio(1, contentMode: .fit)
-                            .foregroundStyle(Color(.systemGray5))
-                            .frame(maxWidth: 0.3 * proxy.size.width)
+                        AsyncImage(url: ImageRequest(imageID: user.id).imageURL) { image in
+                            image.resizable()
+                                .aspectRatio(contentMode: .fit)
+                        } placeholder: {
+                            Image(systemName: "person.fill")
+                                .resizable()
+                                .aspectRatio(1, contentMode: .fit)
+                                .foregroundStyle(Color(.systemGray5))
+                        }
+                        .frame(maxWidth: 0.3 * proxy.size.width)
+
                         Text(user.name)
                     }
                     Text(user.bio ?? "")
